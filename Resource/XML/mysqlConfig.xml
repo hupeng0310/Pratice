@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mysql>
+    <configure>
+        <host>localhost</host>
+        <user>root</user>
+        <password>root</password>
+        <database>mysql</database>
+    </configure>
+    <configure>
+        <host>127.0.0.1</host>
+        <user>root1</user>
+        <password>root</password>
+        <database>mysql</database>
+    </configure>
+</mysql>
