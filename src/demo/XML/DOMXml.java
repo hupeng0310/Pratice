@@ -1,4 +1,4 @@
-package XML;
+package demo.XML;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
