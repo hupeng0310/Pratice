@@ -1,4 +1,4 @@
-package com.thread.runnable;
+package com.Thread.Runnable;
 
 public class MyThread extends Thread{
     @Override

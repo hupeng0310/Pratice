@@ -1,4 +1,4 @@
-package com.thread.runnable;
+package com.Thread.Runnable;
 
 public class RunnableTest {
     public static void main(String[] args){
