@@ -23,13 +23,14 @@ public class MysqlConnection {
         MysqlConnection.password = password;
         MysqlConnection.database = database;
     }
-    public static Connection getConnection() throws SQLException {
+    public static Connection getConnection() throws SQLException, ClassNotFoundException {
         if(connection == null || connection.isClosed()){
+            Class.forName(className);
             connection = DriverManager.getConnection(urlHead+address + ":" + port +"/" +database +urlEnd,user,password);
         }
         return connection;
     }
-    public static Connection getConnection(String address,int port,String user,String password,String database) throws SQLException {
+    public static Connection getConnection(String address,int port,String user,String password,String database) throws SQLException, ClassNotFoundException {
         setConfig(address, port, user, password, database);
         return getConnection();
     }
