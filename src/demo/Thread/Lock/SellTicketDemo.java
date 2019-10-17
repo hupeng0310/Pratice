@@ -20,24 +20,24 @@ public class SellTicketDemo {
 		new Thread(new Runnable() {
 			public void run() {
 				while(true) {
-					//lock.lock();
+					lock.lock();
 					if(tickets <= 0) {
 						break;
 					}
 					System.out.println("1号窗口" + sellTicket());
-					//lock.unlock();
+					lock.unlock();
 				}
 			}
 		}).start();
 		new Thread(new Runnable() {
 			public void run() {
 				while(true) {
-					//lock.lock();
+					lock.lock();
 					if(tickets <= 0) {
 						break;
 					}
 					System.out.println("2号窗口" + sellTicket());
-					//lock.unlock();
+					lock.unlock();
 				}
 			}
 		}).start();
