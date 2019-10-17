@@ -20,6 +20,7 @@ public class CRUDPreparedStatement {
     //删
     public static void deleteForMysql(){
         try{
+            //注意：MysqlConnection.getConnection()方法使用了缺省参数的Connection
             PreparedStatement preparedStatement = MysqlConnection.getConnection().prepareStatement("delete from user where account = ?");
             preparedStatement.setString(1,"hupeng");
             int d = preparedStatement.executeUpdate();
@@ -31,6 +32,7 @@ public class CRUDPreparedStatement {
     //改
     public static void updateForMysql(){
         try{
+            //注意：MysqlConnection.getConnection()方法使用了缺省参数的Connection
             PreparedStatement preparedStatement = MysqlConnection.getConnection().prepareStatement("update user set password = 'hupeng' where account = ?");
             preparedStatement.setString(1,"hupeng");
             int u = preparedStatement.executeUpdate();
@@ -42,6 +44,7 @@ public class CRUDPreparedStatement {
     //查
     public static void readForMysql() {
         try {
+            //注意：MysqlConnection.getConnection()方法使用了缺省参数的Connection
             PreparedStatement preparedStatement = MysqlConnection.getConnection().prepareStatement("select * from user");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
