@@ -1,4 +1,4 @@
-package demo.Thread.Lock;
+package demo.Thread.Synchronized;
 
 public class SellTicketDemo {
     //Object对象，用于同步锁
