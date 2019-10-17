@@ -8,10 +8,11 @@ public class SellTicketDemo {
         try {
             //由于一百张票数量过少，cpu切换线程的次数较少，休眠已降低线程的执行速度
             Thread.sleep(20);
+            return ("已成功售票，剩余票量"+--tickets+"张");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return ("已成功售票，剩余票量"+--tickets+"张");
+        return "发生错误，售票失败";
     }
     public static void main(String[] args){
         Thread thread1 = new Thread(new Runnable() {
