@@ -4,7 +4,7 @@ import java.io.File;
 
 public class Test {
     public static void main(String[] args){
-        Base64Util.Base64Encode("Resource/Files","test.txt","Resource/Files","test_encode.txt");
-        Base64Util.BaseDecode("Resource/Files","test_encode.txt","Resource/Files","test_decode.txt");
+        Base64Util.Base64Encode("Resource/Files","png.png","Resource/Files","png_encode.png");
+        Base64Util.BaseDecode("Resource/Files","png_encode.png","Resource/Files","png_decode.png");
     }
 }
