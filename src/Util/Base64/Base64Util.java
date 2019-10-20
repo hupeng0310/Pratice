@@ -3,7 +3,6 @@ package Util.Base64;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 import java.io.*;
-import java.util.Arrays;
 
 public class Base64Util {
     public static void Base64Encode(String sourceParent,String sourceFileName,String targetParent,String targetFileName){
