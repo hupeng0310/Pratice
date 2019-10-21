@@ -4,9 +4,10 @@ import java.util.Arrays;
 
 public class SortTest {
     public static void main(String[] args) {
-        int[] arr = new int[]{2,3,4,5,1};
+        Integer[] arr = new Integer[]{2,3,4,5,1};
         BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.bubbleSort(arr,(Object a,Object b) -> (int)a > (int)b?true:false);
+        Sortable<Integer> sortable = (Integer t1,Integer t2) -> t1 > t2?true:false;
+        bubbleSort.bubbleSort(arr,sortable);
         System.out.println(Arrays.toString(arr));
     }
 }
