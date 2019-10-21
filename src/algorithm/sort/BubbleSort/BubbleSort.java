@@ -1,4 +1,6 @@
-package algorithm.sort;
+package algorithm.sort.BubbleSort;
+
+import algorithm.sort.Sortable;
 
 public class BubbleSort<T> {
 
